@@ -1,0 +1,2 @@
+# parlor
+Django created app
