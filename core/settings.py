@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
     # manually Installed Apps
     'client',
+    'server',
 ]
 
 MIDDLEWARE = [
