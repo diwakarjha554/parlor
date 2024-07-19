@@ -1,5 +1,7 @@
 from django.urls import path
 from client.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', index , name="Home"),
@@ -16,3 +18,5 @@ urlpatterns = [
     path('thankyou' , Confirm , name="About"),
     
 ]
+
+urlpatterns += static(settings.MEDIA_URL , document_root=settings.MEDIA_ROOT)
